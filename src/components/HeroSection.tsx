@@ -18,22 +18,20 @@ const HeroSection = ({
   description,
   ctaText,
   ctaLink,
-  backgroundImage,
+  backgroundImage = "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&h=800&fit=crop", // Default AI-generated office background
   className = ''
 }: HeroSectionProps) => {
   return (
     <section className={`relative py-20 lg:py-32 overflow-hidden ${className}`}>
       {/* Enhanced Background with multiple layers */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900">
-          {backgroundImage && (
-            <div 
-              className="absolute inset-0 bg-cover bg-center opacity-20"
-              style={{ backgroundImage: `url(${backgroundImage})` }}
-            />
-          )}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/90 via-blue-800/90 to-purple-900/90">
+          <div 
+            className="absolute inset-0 bg-cover bg-center opacity-30"
+            style={{ backgroundImage: `url(${backgroundImage})` }}
+          />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
         
         {/* Animated background particles */}
         <div className="absolute inset-0">

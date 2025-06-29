@@ -46,6 +46,7 @@ const Index = () => {
         description="We help businesses recover outstanding debts while educating consumers about their financial rights and responsibilities."
         ctaText="Learn About Our Services"
         ctaLink="/who-we-are"
+        backgroundImage="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&h=800&fit=crop"
         className="mt-16"
       />
 
@@ -93,8 +94,9 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-teal-50 opacity-50"></div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -126,7 +128,7 @@ const Index = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=600&h=400&fit=crop"
+                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=400&fit=crop"
                 alt="Professional team meeting"
                 className="rounded-lg shadow-lg"
               />
@@ -138,8 +140,15 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-teal-600">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-20 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&h=600&fit=crop)` }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-teal-900/90"></div>
+        </div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to Get Started?
           </h2>

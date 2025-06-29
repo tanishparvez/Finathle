@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
 import HeroSection from '../components/HeroSection';
@@ -62,12 +61,14 @@ const DebtCollection = () => {
         subtitle="Consumer Education"
         title="Understanding Debt Collection"
         description="Learn about the debt collection process, your rights as a consumer, and how to navigate collection situations effectively."
+        backgroundImage="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=800&fit=crop"
         className="mt-16"
       />
 
       {/* Collection Process */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-teal-50/50"></div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               The Collection Process
@@ -101,8 +102,15 @@ const DebtCollection = () => {
       </section>
 
       {/* Your Rights */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center opacity-20"
+            style={{ backgroundImage: `url(https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&h=800&fit=crop)` }}
+          />
+          <div className="absolute inset-0 bg-gray-50/90"></div>
+        </div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Your Rights Under the FDCPA
@@ -126,8 +134,9 @@ const DebtCollection = () => {
       </section>
 
       {/* What Collectors Cannot Do */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-red-50/30 to-orange-50/30"></div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
@@ -182,8 +191,15 @@ const DebtCollection = () => {
       </section>
 
       {/* Dealing with Collectors */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center opacity-10"
+            style={{ backgroundImage: `url(https://images.unsplash.com/photo-1556761175-4b46a572b786?w=1200&h=800&fit=crop)` }}
+          />
+          <div className="absolute inset-0 bg-gray-50/95"></div>
+        </div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               How to Handle Collection Calls
@@ -240,8 +256,9 @@ const DebtCollection = () => {
       </section>
 
       {/* Resources */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 opacity-50"></div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Need Help?
