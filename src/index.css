@@ -151,7 +151,7 @@
     animation: float3D 6s ease-in-out infinite;
   }
 
-  /* Advanced keyframes for 3D effects */
+  /* Advanced keyframes for 3D effects with light blue colors */
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -318,7 +318,7 @@
     animation: fadeIn 1s ease-out 1.2s both;
   }
 
-  /* Enhanced 3D hover effects */
+  /* Enhanced 3D hover effects with light blue colors */
   .hover-lift {
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
@@ -333,7 +333,7 @@
   }
 
   .hover-glow:hover {
-    box-shadow: 0 0 40px rgba(59, 130, 246, 0.4), 0 0 80px rgba(147, 51, 234, 0.2);
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.4), 0 0 80px rgba(14, 165, 233, 0.2);
     transform: translateY(-3px) rotateX(2deg);
   }
 
@@ -346,9 +346,9 @@
     transform: rotateX(5deg) rotateY(5deg) translateZ(10px);
   }
 
-  /* Enhanced gradient effects */
+  /* Enhanced gradient effects with light blue colors */
   .gradient-text {
-    background: linear-gradient(135deg, #3B82F6, #06B6D4, #8B5CF6, #EC4899);
+    background: linear-gradient(135deg, #3B82F6, #06B6D4, #0EA5E9, #67E8F9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -402,18 +402,18 @@
     animation-delay: -4s;
   }
 
-  /* Enhanced pulse glow with 3D effect */
+  /* Enhanced pulse glow with 3D effect using light blue colors */
   .pulse-glow {
     animation: pulseGlow3D 3s ease-in-out infinite alternate;
   }
 
   @keyframes pulseGlow3D {
     from {
-      box-shadow: 0 0 30px rgba(59, 130, 246, 0.4), 0 0 60px rgba(147, 51, 234, 0.2);
+      box-shadow: 0 0 30px rgba(59, 130, 246, 0.4), 0 0 60px rgba(14, 165, 233, 0.2);
       transform: scale(1) rotateZ(0deg);
     }
     to {
-      box-shadow: 0 0 50px rgba(59, 130, 246, 0.8), 0 0 100px rgba(147, 51, 234, 0.4);
+      box-shadow: 0 0 50px rgba(59, 130, 246, 0.8), 0 0 100px rgba(14, 165, 233, 0.4);
       transform: scale(1.05) rotateZ(1deg);
     }
   }
