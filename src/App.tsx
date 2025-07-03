@@ -16,6 +16,7 @@ import DebtCollection from "./pages/DebtCollection";
 import ScamsAndFrauds from "./pages/ScamsAndFrauds";
 import FAQs from "./pages/FAQs";
 import ContactUs from "./pages/ContactUs";
+import EMICalculator from "./pages/EMICalculator";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/scams-and-frauds" element={<ScamsAndFrauds />} />
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/emi-calculator" element={<EMICalculator />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

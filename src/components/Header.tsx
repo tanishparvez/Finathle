@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Sparkles, Zap } from 'lucide-react';
+import { Menu, X, ChevronDown, Sparkles, Zap, Calculator } from 'lucide-react';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -140,6 +140,17 @@ const Header = () => {
               )}
             </div>
 
+            {/* EMI Calculator Link */}
+            <Link
+              to="/emi-calculator"
+              className={`flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-all duration-300 py-3 px-4 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-sky-50 font-semibold transform hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-xl group ${
+                location.pathname === '/emi-calculator' ? 'text-blue-600 bg-gradient-to-r from-blue-50 to-sky-50' : ''
+              }`}
+            >
+              <Calculator className="w-4 h-4 group-hover:rotate-12 transition-transform duration-300" />
+              <span>EMI Calculator</span>
+            </Link>
+
             <Link
               to="/faqs"
               className={`text-gray-700 hover:text-blue-600 transition-all duration-300 py-3 px-4 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-sky-50 font-semibold transform hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-xl ${
@@ -209,6 +220,14 @@ const Header = () => {
                 ))}
               </div>
               <div className="px-6 space-y-3 animate-fade-in-delayed-3">
+                <Link
+                  to="/emi-calculator"
+                  className="flex items-center space-x-3 py-4 px-4 text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-sky-50 hover:text-blue-600 transition-all duration-300 rounded-2xl font-semibold transform hover:scale-105"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <Calculator className="w-5 h-5" />
+                  <span>EMI Calculator</span>
+                </Link>
                 <Link
                   to="/faqs"
                   className="block py-4 px-4 text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-sky-50 hover:text-blue-600 transition-all duration-300 rounded-2xl font-semibold transform hover:scale-105"
